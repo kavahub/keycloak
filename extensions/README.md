@@ -1,8 +1,10 @@
-# keycloak-extensions
+# extensions
+
+`keycloak`扩展插件集合
 
 ## 1. Keycloak SPI 插件： oidc-lucky-number-mapper  
 
-OIDC协议的令牌映射器
+`OIDC`协议的令牌映射器
 
 可以配置这个映射器，设置上限和下限数值，映射器会随机生成之间的一个数值，并保存到令牌中
 

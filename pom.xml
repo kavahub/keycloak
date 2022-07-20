@@ -37,7 +37,7 @@
         <module>mqtt-publisher-provider</module>
         <module>mail-sender-mqtt-provider</module>
         <module>event-listener-mqtt-provider</module>
-        <module>keycloak-extensions</module>
+        <module>extensions</module>
     </modules>
 
     <repositories>

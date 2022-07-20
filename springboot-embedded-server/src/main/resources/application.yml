@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: springboot-keycloak-embedded
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/keycloak?characterEncoding=UTF-8&useSSL=true
+    username: kkuser
+    password: kkuser
 
 keycloak:
   custom:
@@ -14,7 +18,18 @@ keycloak:
   emailSender:
     provider: "mqtt"
 
+  connectionsJpa:
+    default:
+     showSql: true    
 
+# 日志配置
+logging:
+  level:
+    ROOT: INFO
+    "[org.dubhe]": DEBUG
+    # "[org.springframework.security]": DEBUG
+    # "[org.springframework.cache]": TRACE
+    # "[org.keycloak]": TRACE
 
 
 

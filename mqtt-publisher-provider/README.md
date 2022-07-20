@@ -1,4 +1,4 @@
-# mail-sender-mqtt-provider
+# mqtt-publisher-provider
 
 #### Keycloak SPI： 发送消息到MQTT服务器(mqttPublisher)
 

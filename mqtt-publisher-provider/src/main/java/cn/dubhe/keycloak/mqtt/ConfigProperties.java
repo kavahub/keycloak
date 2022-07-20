@@ -123,7 +123,7 @@ public class ConfigProperties {
                 value = config.get(this.code);
             } else {
                 // 尝试从环境变量中读取配置信息，如: S8D_MQTT_SERVERURI:
-                String envVariableName = "S8D_MQTT_" + this.code.toUpperCase(Locale.ENGLISH);
+                String envVariableName = "MQTT_" + this.code.toUpperCase(Locale.ENGLISH);
                 String env = System.getenv(envVariableName);
                 if (env != null) {
                     value = env;
@@ -132,6 +132,12 @@ public class ConfigProperties {
             return value;
         }
 
+        /**
+         * 读取参数信息
+         * 
+         * @param config
+         * @return
+         */
         public static ConfigProperties configProperties(final Scope config) {
             final String serverUri = SERVER_URI.resolveConfigVar(config);
             final String username = USERNAME.resolveConfigVar(config);

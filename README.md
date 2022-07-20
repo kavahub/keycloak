@@ -5,7 +5,7 @@
 | 名称                         | 说明                                                                                 |
 | ---------------------------- | ------------------------------------------------------------------------------------ |
 | event-listener-mqtt-provider | Keycloak SPI eventsListener 插件：将系统事件发布到MQTT服务                           |
-| keycloak-extensions          | Keycloak SPI 插件：许多的，简单的插件集合                                            |
+| extensions                   | Keycloak SPI 插件：许多的，简单的插件集合                                            |
 | mail-sender-mqtt-provider    | Keycloak SPI emailSender 插件：将邮件发送至MQTT服务                                  |
 | mqtt-publisher-provider      | 自定义SPI：集成MQTT client，发布消息到MQTT服务，其他插件可以调用此服务               |
 | otp-mail-provider            | Keycloak SPI authenticator 插件：动态口令（OTP）使用邮件实现，将验证码发送至用户邮箱 |
@@ -13,6 +13,7 @@
 | theme-provider               | Keycloak SPI themeResource 插件：自定义主题                                          |
 | springboot-embedded-server   | 基于spring boot的，内嵌式的Keycalok服务                                              |
 | keycloak-server              | Keycloak官方服务配置，工具                                                           |
+| angular-ui                   | 前端Angular中使用keycloak                                                            |
 
 #### 使用说明
 

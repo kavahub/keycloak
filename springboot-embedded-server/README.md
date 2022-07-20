@@ -97,7 +97,7 @@ mvn compile jib:build -Pali-docker
 
 本地拉取并运行镜像
 ```
-docker run -p 9000:9000 --link mysql:mysql --name springboot-embedded-server -e "SPRING_PROFILES_ACTIVE=pro" -d registry.cn-hangzhou.aliyuncs.com/dubhe/cn.dubhe.keycloak.springboot-embedded-server
+docker run -p 9000:9000 --link mysql:mysql --name springboot-embedded-server -d registry.cn-hangzhou.aliyuncs.com/beidou/cn.dubhe.keycloak.springboot-embedded-server
 ```
 
 
